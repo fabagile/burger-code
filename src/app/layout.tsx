@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./styles.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +15,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+        <head>
+        <title>Burger Code</title>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+      <body className={inter.className}>
+      <div className="container site">
+      <h1 className="text-logo"><span className="glyphicon glyphicon-cutlery"></span> Burger Code <span className="glyphicon glyphicon-cutlery"></span></h1>
+
+    </div>
+
+        {children}
+
+      </body>
     </html>
   );
 }
