@@ -8,9 +8,9 @@ import List from "@/components/items/List";
 
 export default function Home() {
   return (<>
-  <h2>
+  {/* <h2>
     Alors, ça roule ?
-  </h2>
+  </h2> */}
   <List />
   {/* <Dish /> */}
     {/* <Navigation /> */}
