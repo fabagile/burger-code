@@ -1,6 +1,8 @@
 body 
 {
     /* background: url(../../public/images/bg.png); */
+    background-image: url(../../public/images/Burger.jpg);
+    background-size: cover;
 }
 /* } */
 .site

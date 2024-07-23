@@ -1,0 +1,98 @@
+body {
+  background: url(../../public/images/bg.png);
+  // background-image: url(../../public/images/Burger.jpg);
+  background-size: cover;
+}
+.site {
+  font-family: "Holtwood One SC", sans-serif;
+}
+
+.text-logo {
+  font-family: "Holtwood One SC", sans-serif;
+  color: #e7480f;
+  text-shadow: 2px 2px #ffd301;
+  font-size: 50px;
+  padding: 40px 0px;
+  text-align: center;
+  .glyphicon {
+    color: #ffd301;
+    text-shadow: 0px 0px #ffd301;
+  }
+}
+
+.nav {
+  margin-bottom: 40px;
+  > li > a {
+    color: #eee;
+    font-size: 18px;
+    text-shadow: 2px 2px #333;
+    &:focus,
+    &:hover {
+      color: #e7480f;
+      background-color: #eee;
+    }
+  }
+  &-pills > li.active > a {
+    &,
+    &:hover,
+    &:focus {
+      background: #e7480f;
+    }
+  }
+}
+.thumbnail img {
+  background: #ffd301;
+}
+.price {
+  background: #5cb85c;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-shadow: 2px 2px #333;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  &:before {
+    border: 4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left: 4px solid #4a934a;
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: -8px;
+  }
+}
+.caption > h4 {
+  color: #e7480f;
+  font-size: 18px;
+}
+
+.btn-order {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #e7480f;
+  text-decoration: none;
+  text-shadow: 2px 2px #333;
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #c13c0d;
+  }
+}
+
+/*  ADMIN */
+
+.admin {
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+}
+.help-inline {
+  color: red;
+}
