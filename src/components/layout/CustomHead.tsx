@@ -3,7 +3,7 @@ import React from "react";
 const CustomHead = () => {
   return (
     <head>
-      <meta charSet="utf-8" />
+      {/* <meta charSet="utf-8" /> */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://kit.fontawesome.com/a54ea23ea6.js" crossOrigin="anonymous"></script>

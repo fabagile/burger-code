@@ -1,29 +1,44 @@
 import { create } from "zustand";
 
 type Item = {
-    id: string,
-name: string,
-description: string,
-price: string,
-image: string,
-category: string,
-}
+  id: string;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+};
 type Store = {
-    items: Item[],
-    getItem: null|Item,
-    select: (id:string) => void
-    
-}
+  items: Item[];
+  getItem: null | Item;
+  select: (itemId: string) => void;
+  resetItem: () => void;
+  cart: Item[];
+  addToCart: (itemId: string) => void;
+  //   cart
+};
 
-import items from "./data/items.json"
+import items from "./data/items.json";
+import { MouseEventHandler } from "react";
 
 export const itemsStore = create<Store>((set, get) => ({
-    items: items,
-    getItem: null,
-    select: (id)=>{
-        
-        set({
-            getItem: get().items.find(item=> item.id==id)
-        })
-    }
-}))
+  items: items,
+  getItem: null,
+  select: (itemId) => {
+    const newItem = get().items.find((item) => item.id == itemId);
+    console.log(newItem);
+    set({
+      getItem: newItem,
+    });
+  },
+  resetItem: () => {
+    set({ getItem: null });
+  },
+  cart: [],
+  addToCart: (itemId) => {
+    const newItem = get().items.find((item) => item.id == itemId);
+    set({
+      cart: [newItem, ...get().cart],
+    });
+  },
+}));

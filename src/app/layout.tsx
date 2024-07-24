@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./styles.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@/styles/main.scss";
 
 import Navigation from "@/components/layout/navbar/Navigation";
 import CustomHead from "@/components/layout/CustomHead"
@@ -21,20 +22,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <CustomHead />
+      <head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/a54ea23ea6.js" crossOrigin="anonymous"></script>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link
+        href="http://fonts.googleapis.com/css?family=Holtwood+One+SC"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </head>
       <body>
         <div className="container site">
           <h1 className="text-logo">
             <span className="glyphicon glyphicon-cutlery"></span> Burger Code{" "}
             <span className="glyphicon glyphicon-cutlery"></span>
           </h1>
-        <Navigation />
+        {/* <Navigation /> */}
         <div>
 
         {children}
         </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
 
       </body>
     </html>

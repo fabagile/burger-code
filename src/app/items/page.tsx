@@ -7,16 +7,16 @@ import React from "react";
 const ItemPage = () => {
     // const router = useRouter()
 
-  const items = itemsStore((s) => s.items);
-  const { image, name, description, price } = items[2];
+  const getItem = itemsStore((s) => s.getItem);
+  // const { image, name, description, price } = getItem;
   return (<>
     <div className="jumbotron">
       <div className="thumbnail">
-        <img src={`/images/${image}`} alt={`${name}`} />
-        <div className="price">{parseFloat(price).toFixed(2)} €</div>
+        <img src={`/images/${getItem.image}`} alt={`${name}`} />
+        <div className="price">{parseFloat(getItem.price).toFixed(2)} €</div>
         <div className="caption">
-          <h4>{name}</h4>
-          <p>{description}</p>
+          <h4>{getItem.name}</h4>
+          <p>{getItem.description}</p>
           <a href="#" className="btn btn-order" role="button">
             <span className="glyphicon glyphicon-shopping-cart"></span>{" "}
             Commander
