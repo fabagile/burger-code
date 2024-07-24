@@ -15,7 +15,9 @@ type Store = {
   resetItem: () => void;
   cart: Item[];
   addToCart: (itemId: string) => void;
-  //   cart
+  total: number;
+  order: ()=> void;
+
 };
 
 import items from "./data/items.json";
@@ -39,6 +41,14 @@ export const itemsStore = create<Store>((set, get) => ({
     const newItem = get().items.find((item) => item.id == itemId);
     set({
       cart: [newItem, ...get().cart],
+      total: get().total + parseFloat(newItem.price),
     });
   },
+  total: 0,
+  order: ()=> {
+    set({
+        cart: [],
+        total: 0
+    })
+  }
 }));
