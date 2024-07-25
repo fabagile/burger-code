@@ -2,7 +2,7 @@ import React from 'react'
 
 const Icon = ({name}) => {
   return (
-    <span className={`glyphicon glyphicon-${name}`} />
+    <i className={`fas fa-${name}`} />
   )
 }
 

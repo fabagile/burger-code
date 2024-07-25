@@ -82,7 +82,7 @@
   {
     "id": "11",
     "name": "Fish",
-    "description": "Sandwich: Poisson PanÃ©, Salade, Mayonnaise, Cornichon",
+    "description": "Sandwich: Poisson Pané, Salade, Mayonnaise, Cornichon",
     "price": "6.5",
     "image": "b5.png",
     "category": "2"
@@ -106,7 +106,7 @@
   {
     "id": "14",
     "name": "Onion Rings",
-    "description": "{{48}}''{{49}}",
+    "description": "Rondelles d'oignon frites",
     "price": "3.4",
     "image": "s2.png",
     "category": "3"
@@ -137,16 +137,16 @@
   },
   {
     "id": "18",
-    "name": "CÃ©sar Poulet PanÃ©",
-    "description": "Poulet PanÃ©, Salade, Tomate et la fameuse sauce CÃ©sar",
+    "name": "César Poulet Pané",
+    "description": "Poulet Pané, Salade, Tomate et la fameuse sauce César",
     "price": "8.9",
     "image": "sa1.png",
     "category": "4"
   },
   {
     "id": "19",
-    "name": "CÃ©sar Poulet GrillÃ©",
-    "description": "Poulet GrillÃ©, Salade, Tomate et la fameuse sauce CÃ©sar",
+    "name": "César Poulet Grillé",
+    "description": "Poulet Grillé, Salade, Tomate et la fameuse sauce César",
     "price": "8.9",
     "image": "sa2.png",
     "category": "4"
@@ -154,23 +154,23 @@
   {
     "id": "20",
     "name": "Salade Light",
-    "description": "Salade, Tomate, Concombre, MaÃ¯s et Vinaigre balsamique",
+    "description": "Salade, Tomate, Concombre, Maïs et Vinaigre balsamique",
     "price": "5.9",
     "image": "sa3.png",
     "category": "4"
   },
   {
     "id": "21",
-    "name": "Poulet PanÃ©",
-    "description": "Poulet PanÃ©, Salade, Tomate et la sauce de votre choix",
+    "name": "Poulet Pané",
+    "description": "Poulet Pané, Salade, Tomate et la sauce de votre choix",
     "price": "7.9",
     "image": "sa4.png",
     "category": "4"
   },
   {
     "id": "22",
-    "name": "Poulet GrillÃ©",
-    "description": "Poulet GrillÃ©, Salade, Tomate et la sauce de votre choix",
+    "name": "Poulet Grillé",
+    "description": "Poulet Grillé, Salade, Tomate et la sauce de votre choix",
     "price": "7.9",
     "image": "sa5.png",
     "category": "4"
@@ -193,7 +193,7 @@
   },
   {
     "id": "25",
-    "name": "Coca-Cola ZÃ©ro",
+    "name": "Coca-Cola Zéro",
     "description": "Au choix: Petit, Moyen ou Grand",
     "price": "1.9",
     "image": "bo3.png",
@@ -242,7 +242,7 @@
   {
     "id": "31",
     "name": "Beignet",
-    "description": "Au choix: Au chocolat ou Ã  la vanille",
+    "description": "Au choix: Au chocolat ou à  la vanille",
     "price": "2.9",
     "image": "d3.png",
     "category": "6"

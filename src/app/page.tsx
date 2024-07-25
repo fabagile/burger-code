@@ -15,11 +15,11 @@ export default function Home() {
     <>
       <div className="card">
         <div className="btn-group">
-          <button onClick={resetProduct} className="btn btn-success">
-            <Icon name="floppy-remove" />
+          <button onClick={resetProduct} className="btn btn-secondary">
+            <Icon name="close" />
           </button>
-          <button onClick={order} className="btn btn-link">
-            <Icon name="check" />
+          <button onClick={order} className="btn btn-success">
+            <Icon name="layer-group" />
           </button>
         </div>
         Panier : {cart.length}

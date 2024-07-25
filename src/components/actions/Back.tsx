@@ -6,9 +6,9 @@ const AddToCart = ({ action }) => {
     <button
       onClick={action}
       className="btn btn-sm btn-outline-dark bg-info float-end"
-      title="ajouter au panier"
+      title="Retour à l'accueil"
     >
-      <Icon name="plus" />
+      <Icon name="close" />
     </button>
   );
 };

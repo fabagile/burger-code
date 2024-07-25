@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Burger Code",
-  description: "Commandez vos burgers préférés",
+  description: "Commandez vos burgers préférés"
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script
