@@ -6,6 +6,7 @@ import "@/styles/main.scss";
 import Navigation from "@/components/layout/navbar/Navigation";
 import CustomHead from "@/components/layout/CustomHead"
 import Footer from "@/components/layout/Footer";
+import Icon from "@/components/UI/Icon";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,8 +42,8 @@ export default function RootLayout({
       <body>
         <div className="container site">
           <h1 className="text-logo">
-            <span className="glyphicon glyphicon-cutlery"></span> Burger Code{" "}
-            <span className="glyphicon glyphicon-cutlery"></span>
+            <Icon name="cutlery" /> Burger Code{" "}
+            <Icon name="cutlery" />
           </h1>
         {/* <Navigation /> */}
         <div>

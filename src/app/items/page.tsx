@@ -1,5 +1,6 @@
 "use client";
 
+import Icon from "@/components/UI/Icon";
 import { itemsStore } from "@/store";
 import React from "react";
 
@@ -18,7 +19,7 @@ const ItemPage = () => {
           <h4>{getItem.name}</h4>
           <p>{getItem.description}</p>
           <a href="#" className="btn btn-order" role="button">
-            <span className="glyphicon glyphicon-shopping-cart"></span>{" "}
+          <Icon name="shopping-cart" />{" "}
             Commander
           </a>
         </div>

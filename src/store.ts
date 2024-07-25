@@ -11,11 +11,11 @@ type Item = {
 type Store = {
   items: Item[];
   getItem: null | Item;
+  cart: Item[];
+  total: number;
   select: (itemId: string) => void;
   resetItem: () => void;
-  cart: Item[];
   addToCart: (itemId: string) => void;
-  total: number;
   order: ()=> void;
 
 };

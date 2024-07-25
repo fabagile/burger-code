@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { itemsStore } from "@/store";
 import Dish from "./Dish";
 import { useShallow } from "zustand/react/shallow";
+import Card from "../UI/Card";
 
 export default function List() {
   const { items} = itemsStore(
