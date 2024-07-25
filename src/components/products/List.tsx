@@ -2,22 +2,22 @@
 
 import { useEffect } from "react";
 
-import { itemsStore } from "@/store";
+import { productsStore } from "@/store";
 import Dish from "./Dish";
 import { useShallow } from "zustand/react/shallow";
 import Card from "../UI/Card";
 
 export default function List() {
-  const { items} = itemsStore(
+  const { products} = productsStore(
     useShallow((s) => ({
-      items: s.items,
-      getItem: s.getItem,
+      products: s.products,
+      getProduct: s.getProduct,
     }))
   );
-  useEffect(() => console.log(items), [items]);
+  useEffect(() => console.log(products), [products]);
   return (
     <div className="row">
-      {items.map((i) => (
+      {products.map((i) => (
         <Dish key={i.id} {...i} />
       ))}
     </div>

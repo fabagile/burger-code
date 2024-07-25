@@ -1,12 +1,16 @@
-// import { itemsStore } from '@/store'
-import React from 'react'
-import Icon from '../UI/Icon'
+import React from "react";
+import Icon from "../UI/Icon";
 
-const AddToCart = ({action, }) => {
-    // const {getItem} = itemsStore()
+const AddToCart = ({ action }) => {
   return (
-    <button onClick={action} className='btn-md btn-info float-right' title="ajouter au panier"><Icon name="plus" /></button>
-  )
-}
+    <button
+      onClick={action}
+      className="btn-md btn-info float-right"
+      title="ajouter au panier"
+    >
+      <Icon name="plus" />
+    </button>
+  );
+};
 
-export default AddToCart
+export default AddToCart;

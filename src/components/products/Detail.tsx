@@ -1,5 +1,5 @@
 // import {image} from "/images/m1.png"
-import { itemsStore } from "@/store";
+import { productsStore } from "@/store";
 import Image from "next/image";
 import React from "react";
 import { useShallow } from "zustand/react/shallow";
@@ -7,9 +7,9 @@ import Icon from "../UI/Icon";
 import AddToCart from "../actions/AddToCart";
 
 const Detail = ({ id, name, description, price, image }) => {
-  const { select, getItem, addToCart } = itemsStore(
+  const { select, getProduct, addToCart } = productsStore(
     useShallow((s) => ({ select: s.select, 
-      getItem: s.getItem,
+      getProduct: s.getProduct,
       addToCart: s.addToCart,
 
      }))

@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode, useMemo } from "react";
-import { itemsStore } from "@/store";
+import { productsStore } from "@/store";
 
 import { useShallow } from "zustand/react/shallow";
 import Icon from "../UI/Icon";
@@ -37,10 +37,10 @@ const Card = ({
   image,
   mode = "single",
 }: CardType) => {
-  const { select, getItem, addToCart } = itemsStore(
+  const { select, getProduct, addToCart } = productsStore(
     useShallow((s) => ({
       select: s.select,
-      getItem: s.getItem,
+      getProduct: s.getProduct,
       addToCart: s.addToCart,
     }))
   );
