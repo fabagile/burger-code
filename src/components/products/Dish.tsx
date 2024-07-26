@@ -26,8 +26,8 @@ const Dish = ({ id, name, description, price, image }) => {
             <AddToCart action={() => addToCart(id)} />
           </div>
           <p>{description}</p>
-          <a href="/" className="btn btn-order" role="button">
-            <Icon name="shopping-cart" /> Commander
+          <a href={`/products/${id}`} className="btn btn-order" role="button">
+            <Icon name="eye" /><span className="ps-3">Voir le détail</span>
           </a>
         </div>
       </div>
