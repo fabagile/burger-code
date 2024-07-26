@@ -1,1 +1,1 @@
-export const toLocalCurrency = (number) => (number.toFixed(2), "€")
+export const toLocalCurrency = (number) => (`${number.toFixed(2)}`.replace('.',"€"))
