@@ -5,6 +5,7 @@ import React from "react";
 import { useShallow } from "zustand/react/shallow";
 import Icon from "../UI/Icon";
 import AddToCart from "../actions/AddToCart";
+import { toLocalCurrency } from "@/utils/transform";
 
 const Detail = ({ id, name, description, price, image }) => {
   const { select, getProduct, addToCart } = productsStore(
@@ -24,7 +25,7 @@ const Detail = ({ id, name, description, price, image }) => {
               src={`/images/${image}`}
               alt={`${name}`}
             />
-            <div className="price">{parseFloat(price).toFixed(2)} €</div>
+            <div className="price">{toLocalCurrency(parseFloat(price))}</div>
           </div>
         </div>
         <div className="col-sm-12 col-md-7">

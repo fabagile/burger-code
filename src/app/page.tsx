@@ -7,6 +7,7 @@ import { productsStore } from "@/store";
 
 import Detail from "@/components/products/Detail";
 import Icon from "@/components/UI/Icon";
+import { toLocalCurrency } from "@/utils/transform";
 
 export default function Home() {
   const {getProduct, resetProduct, cart, order, total } = productsStore();
@@ -31,7 +32,7 @@ export default function Home() {
     <>
       <div className="card">
         <p>Panier : {cart.length}</p>
-        <p>{total.toFixed(2)} €</p>
+        <p>{toLocalCurrency(total)}</p>
       </div>
       <List />
     </>

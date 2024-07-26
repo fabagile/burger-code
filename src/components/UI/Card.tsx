@@ -3,6 +3,8 @@
 import { ReactNode, useMemo } from "react";
 import { productsStore } from "@/store";
 
+import { toLocalCurrency } from "@/utils/transform";
+
 import { useShallow } from "zustand/react/shallow";
 import Icon from "../UI/Icon";
 import AddToCart from "../actions/AddToCart";
@@ -11,7 +13,7 @@ type CardType = {
   id: string;
   name: string;
   description: string;
-  price: string;
+  price: number;
   image: string;
   mode: string;
 //   children: ReactNode;
@@ -51,7 +53,7 @@ const Card = ({
         <div className={columnClasses}>
           <div className="thumbnail" onClick={() => select(id)}>
             <img src={`/images/${image}`} alt={`${name}`} />
-            <div className="price">{parseFloat(price).toFixed(2)} €</div>
+            <div className="price">{toLocalCurrency(price)}</div>
           </div>
         </div>
 
@@ -74,7 +76,7 @@ const Card = ({
   //     <div className="col-sm-6 col-md-4">
   //       <div className="thumbnail" onClick={() => select(id)}>
   //         <img src={`/images/${image}`} alt={`${name}`} />
-  //         <div className="price">{parseFloat(price).toFixed(2)} €</div>
+  //         <div className="price">{toLocalCurrency(price)}</div>
   //         <div className="caption">
   //           <h4>{name}</h4>
   //           <AddToCart action={() => addToCart(id)} />
@@ -91,7 +93,7 @@ const Card = ({
   //         <div className="col-sm-6 col-md-4">
   //           <div className="thumbnail">
   //             <img src={`/images/${image}`} alt={`${name}`} />
-  //             <div className="price">{parseFloat(price).toFixed(2)} €</div>
+  //             <div className="price">{toLocalCurrency(price)}</div>
   //           </div>
   //         </div>
   //         <div className="col-sm-6 col-md-8">

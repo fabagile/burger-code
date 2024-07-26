@@ -1,0 +1,1 @@
+export const toLocalCurrency = (number) => (number.toFixed(2), "€")

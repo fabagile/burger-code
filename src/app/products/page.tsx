@@ -2,6 +2,7 @@
 
 import Icon from "@/components/UI/Icon";
 import { productsStore } from "@/store";
+import { toLocalCurrency } from "@/utils/transform";
 import React from "react";
 
 const ProductPage = () => {
@@ -13,7 +14,7 @@ const ProductPage = () => {
         <div className="thumbnail">
           <img src={`/images/${getProduct.image}`} alt={`${name}`} />
           <div className="price">
-            {parseFloat(getProduct.price).toFixed(2)} €
+            {toLocalCurrency(getProduct.price)}
           </div>
           <div className="caption">
             <h4>{getProduct.name}</h4>

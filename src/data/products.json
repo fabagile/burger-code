@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Menu Classic",
     "description": "Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson",
-    "price": "8.9",
+    "price": 8.9,
     "image": "m1.png",
     "category": "1"
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "name": "Menu Bacon",
     "description": "Sandwich: Burger, Fromage, Bacon, Salade, Tomate + Frites + Boisson",
-    "price": "9.5",
+    "price": 9.5,
     "image": "m2.png",
     "category": "1"
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "name": "Menu Big",
     "description": "Sandwich: Double Burger, Fromage, Cornichon, Salade + Frites + Boisson",
-    "price": "10.9",
+    "price": 10.9,
     "image": "m3.png",
     "category": "1"
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "name": "Menu Chicken",
     "description": "Sandwich: Poulet Frit, Tomate, Salade, Mayonnaise + Frites + Boisson",
-    "price": "9.9",
+    "price": 9.9,
     "image": "m4.png",
     "category": "1"
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "name": "Menu Fish",
     "description": "Sandwich: Poisson, Salade, Mayonnaise, Cornichon + Frites + Boisson",
-    "price": "10.9",
+    "price": 10.9,
     "image": "m5.png",
     "category": "1"
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "name": "Menu Double Steak",
     "description": "Sandwich: Double Burger, Fromage, Bacon, Salade, Tomate + Frites + Boisson",
-    "price": "11.9",
+    "price": 11.9,
     "image": "m6.png",
     "category": "1"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "name": "Classic",
     "description": "Sandwich: Burger, Salade, Tomate, Cornichon",
-    "price": "5.9",
+    "price": 5.9,
     "image": "b1.png",
     "category": "2"
   },
@@ -59,7 +59,7 @@
     "id": "8",
     "name": "Bacon",
     "description": "Sandwich: Burger, Fromage, Bacon, Salade, Tomate",
-    "price": "6.5",
+    "price": 6.5,
     "image": "b2.png",
     "category": "2"
   },
@@ -67,7 +67,7 @@
     "id": "9",
     "name": "Big",
     "description": "Sandwich: Double Burger, Fromage, Cornichon, Salade",
-    "price": "6.9",
+    "price": 6.9,
     "image": "b3.png",
     "category": "2"
   },
@@ -75,7 +75,7 @@
     "id": "10",
     "name": "Chicken",
     "description": "Sandwich: Poulet Frit, Tomate, Salade, Mayonnaise",
-    "price": "5.9",
+    "price": 5.9,
     "image": "b4.png",
     "category": "2"
   },
@@ -83,7 +83,7 @@
     "id": "11",
     "name": "Fish",
     "description": "Sandwich: Poisson Pané, Salade, Mayonnaise, Cornichon",
-    "price": "6.5",
+    "price": 6.5,
     "image": "b5.png",
     "category": "2"
   },
@@ -91,7 +91,7 @@
     "id": "12",
     "name": "Double Steak",
     "description": "Sandwich: Double Burger, Fromage, Bacon, Salade, Tomate",
-    "price": "7.5",
+    "price": 7.5,
     "image": "b6.png",
     "category": "2"
   },
@@ -99,7 +99,7 @@
     "id": "13",
     "name": "Frites",
     "description": "Pommes de terre frites",
-    "price": "3.9",
+    "price": 3.9,
     "image": "s1.png",
     "category": "3"
   },
@@ -107,7 +107,7 @@
     "id": "14",
     "name": "Onion Rings",
     "description": "Rondelles d'oignon frites",
-    "price": "3.4",
+    "price": 3.4,
     "image": "s2.png",
     "category": "3"
   },
@@ -115,7 +115,7 @@
     "id": "15",
     "name": "Nuggets",
     "description": "Nuggets de poulet frits",
-    "price": "5.9",
+    "price": 5.9,
     "image": "s3.png",
     "category": "3"
   },
@@ -123,7 +123,7 @@
     "id": "16",
     "name": "Nuggets Fromage",
     "description": "Nuggets de fromage frits",
-    "price": "3.5",
+    "price": 3.5,
     "image": "s4.png",
     "category": "3"
   },
@@ -131,7 +131,7 @@
     "id": "17",
     "name": "Ailes de Poulet",
     "description": "Ailes de poulet Barbecue",
-    "price": "5.9",
+    "price": 5.9,
     "image": "s5.png",
     "category": "3"
   },
@@ -139,7 +139,7 @@
     "id": "18",
     "name": "César Poulet Pané",
     "description": "Poulet Pané, Salade, Tomate et la fameuse sauce César",
-    "price": "8.9",
+    "price": 8.9,
     "image": "sa1.png",
     "category": "4"
   },
@@ -147,7 +147,7 @@
     "id": "19",
     "name": "César Poulet Grillé",
     "description": "Poulet Grillé, Salade, Tomate et la fameuse sauce César",
-    "price": "8.9",
+    "price": 8.9,
     "image": "sa2.png",
     "category": "4"
   },
@@ -155,7 +155,7 @@
     "id": "20",
     "name": "Salade Light",
     "description": "Salade, Tomate, Concombre, Maïs et Vinaigre balsamique",
-    "price": "5.9",
+    "price": 5.9,
     "image": "sa3.png",
     "category": "4"
   },
@@ -163,7 +163,7 @@
     "id": "21",
     "name": "Poulet Pané",
     "description": "Poulet Pané, Salade, Tomate et la sauce de votre choix",
-    "price": "7.9",
+    "price": 7.9,
     "image": "sa4.png",
     "category": "4"
   },
@@ -171,7 +171,7 @@
     "id": "22",
     "name": "Poulet Grillé",
     "description": "Poulet Grillé, Salade, Tomate et la sauce de votre choix",
-    "price": "7.9",
+    "price": 7.9,
     "image": "sa5.png",
     "category": "4"
   },
@@ -179,7 +179,7 @@
     "id": "23",
     "name": "Coca-Cola",
     "description": "Au choix: Petit, Moyen ou Grand",
-    "price": "1.9",
+    "price": 1.9,
     "image": "bo1.png",
     "category": "5"
   },
@@ -187,7 +187,7 @@
     "id": "24",
     "name": "Coca-Cola Light",
     "description": "Au choix: Petit, Moyen ou Grand",
-    "price": "1.9",
+    "price": 1.9,
     "image": "bo2.png",
     "category": "5"
   },
@@ -195,7 +195,7 @@
     "id": "25",
     "name": "Coca-Cola Zéro",
     "description": "Au choix: Petit, Moyen ou Grand",
-    "price": "1.9",
+    "price": 1.9,
     "image": "bo3.png",
     "category": "5"
   },
@@ -203,7 +203,7 @@
     "id": "26",
     "name": "Fanta",
     "description": "Au choix: Petit, Moyen ou Grand",
-    "price": "1.9",
+    "price": 1.9,
     "image": "bo4.png",
     "category": "5"
   },
@@ -211,7 +211,7 @@
     "id": "27",
     "name": "Sprite",
     "description": "Au choix: Petit, Moyen ou Grand",
-    "price": "1.9",
+    "price": 1.9,
     "image": "bo5.png",
     "category": "5"
   },
@@ -219,7 +219,7 @@
     "id": "28",
     "name": "Nestea",
     "description": "Au choix: Petit, Moyen ou Grand",
-    "price": "1.9",
+    "price": 1.9,
     "image": "bo6.png",
     "category": "5"
   },
@@ -227,7 +227,7 @@
     "id": "29",
     "name": "Fondant au chocolat",
     "description": "Au choix: Chocolat Blanc ou au lait",
-    "price": "4.9",
+    "price": 4.9,
     "image": "d1.png",
     "category": "6"
   },
@@ -235,7 +235,7 @@
     "id": "30",
     "name": "Muffin",
     "description": "Au choix: Au fruits ou au chocolat",
-    "price": "2.9",
+    "price": 2.9,
     "image": "d2.png",
     "category": "6"
   },
@@ -243,7 +243,7 @@
     "id": "31",
     "name": "Beignet",
     "description": "Au choix: Au chocolat ou à  la vanille",
-    "price": "2.9",
+    "price": 2.9,
     "image": "d3.png",
     "category": "6"
   },
@@ -251,7 +251,7 @@
     "id": "32",
     "name": "Milkshake",
     "description": "Au choix: Fraise, Vanille ou Chocolat",
-    "price": "3.9",
+    "price": 3.9,
     "image": "d4.png",
     "category": "6"
   },
@@ -259,7 +259,7 @@
     "id": "33",
     "name": "Sundae",
     "description": "Au choix: Fraise, Caramel ou Chocolat",
-    "price": "4.9",
+    "price": 4.9,
     "image": "d5.png",
     "category": "6"
   }

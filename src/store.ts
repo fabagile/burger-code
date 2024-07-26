@@ -5,7 +5,7 @@ type Product = {
   id: string;
   name: string;
   description: string;
-  price: string;
+  price: number;
   image: string;
   category: string;
 };
@@ -41,7 +41,7 @@ export const productsStore = create<Store>((set, get) => ({
     const newProduct = get().products.find((product) => product.id == productId);
     set({
       cart: [newProduct, ...get().cart],
-      total: get().total + parseFloat(newProduct.price),
+      total: get().total + newProduct.price,
     });
   },
   total: 0,
