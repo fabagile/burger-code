@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { redirect } from "next/navigation";
 
 import List from "@/components/products/List";
 import { productsStore } from "@/store";
@@ -12,29 +13,5 @@ import { toLocalCurrency } from "@/utils/transform";
 export default function Home() {
   const {getProduct, resetProduct, cart, order, total } = productsStore();
   useEffect(() => console.table(cart), [cart]);
-  return getProduct !== null ? (
-    <>
-      <div className="card">
-        <div className="btn-group">
-          <button onClick={resetProduct} className="btn btn-secondary">
-            <Icon name="close" />
-          </button>
-          <button onClick={order} className="btn btn-success">
-            <Icon name="layer-group" />
-          </button>
-        </div>
-        Panier : {cart.length}
-      </div>
-
-      <Detail key={getProduct.id} {...getProduct} />
-    </>
-  ) : (
-    <>
-      <div className="card">
-        <p>Panier : {cart.length}</p>
-        <p>{toLocalCurrency(total)}</p>
-      </div>
-      <List />
-    </>
-  );
+  redirect('/products')
 }

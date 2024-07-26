@@ -1,32 +1,40 @@
 "use client";
 
-import Icon from "@/components/UI/Icon";
+import { useEffect } from "react";
+
+import List from "@/components/products/List";
 import { productsStore } from "@/store";
+
+import Detail from "@/components/products/Detail";
+import Icon from "@/components/UI/Icon";
 import { toLocalCurrency } from "@/utils/transform";
-import React from "react";
 
-const ProductPage = () => {
-  const getProduct = productsStore((s) => s.getProduct);
-
-  return (
+export default function Home() {
+  const {getProduct, resetProduct, cart, order, total } = productsStore();
+  useEffect(() => console.table(cart), [cart]);
+  return getProduct !== null ? (
     <>
-      <div className="jumbotron">
-        <div className="thumbnail">
-          <img src={`/images/${getProduct.image}`} alt={`${name}`} />
-          <div className="price">
-            {toLocalCurrency(getProduct.price)}
-          </div>
-          <div className="caption">
-            <h4>{getProduct.name}</h4>
-            <p>{getProduct.description}</p>
-            <a href="#" className="btn btn-order" role="button">
-              <Icon name="shopping-cart" /> Commander
-            </a>
-          </div>
+      <div className="card">
+        <div className="btn-group">
+          <button onClick={resetProduct} className="btn btn-secondary">
+            <Icon name="close" />
+          </button>
+          <button onClick={order} className="btn btn-success">
+            <Icon name="layer-group" />
+          </button>
         </div>
+        Panier : {cart.length}
       </div>
+
+      <Detail key={getProduct.id} {...getProduct} />
+    </>
+  ) : (
+    <>
+      <div className="card">
+        <p>Panier : {cart.length}</p>
+        <p>{toLocalCurrency(total)}</p>
+      </div>
+      <List />
     </>
   );
-};
-
-export default ProductPage;
+}
