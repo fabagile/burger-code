@@ -16,11 +16,11 @@ export default function Home() {
     <>
       <div className="card">
         <div className="btn-group">
-          <button onClick={resetProduct} className="btn btn-secondary">
-            <Icon name="close" />
+          <button onClick={resetProduct} className="btn btn-primary">
+            <Icon name="list" />
           </button>
-          <button onClick={order} className="btn btn-success">
-            <Icon name="layer-group" />
+          <button onClick={order} className="btn btn-secondary">
+            <Icon name="x" />
           </button>
         </div>
         Panier : {cart.length}

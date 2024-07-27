@@ -8,7 +8,7 @@ const AddToCart = ({ action }) => {
       className="btn btn-sm btn-outline-dark bg-info float-end"
       title="ajouter au panier"
     >
-      <Icon name="plus" />
+      <Icon name="cart-plus" />
     </button>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Icon = ({name}) => {
   return (
-    <i className={`fas fa-${name}`} />
+    <i className={`bi-${name} fs-3`}  />
   )
 }
 
