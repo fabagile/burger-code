@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 import { productsStore } from "@/store";
 import Dish from "./Dish";
@@ -14,10 +14,10 @@ export default function List() {
       getProduct: s.getProduct,
     }))
   );
-  useEffect(() => console.log(products), [products]);
+  const currentList = useMemo(() => products, [products]);
   return (
     <div className="row">
-      {products.map((i) => (
+      {currentList.map((i) => (
         <Dish key={i.id} {...i} />
       ))}
     </div>

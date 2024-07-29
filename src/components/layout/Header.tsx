@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../UI/Icon";
+// import Icon from "../UI/Icon";
 
 const Header = () => {
   const Logo = ()=><i className="fa-solid fa-utensils"></i>

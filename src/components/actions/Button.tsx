@@ -1,7 +1,18 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { MouseEventHandler, ReactNode, useMemo } from "react";
 import Icon from "../UI/Icon";
+type BtnType = {
+  textColor?:string
+btnColor?:string
+size?:string
+iconName?:string
+outline?:boolean
+title?:string
+className?:string
+children: ReactNode
+onClick?:MouseEventHandler
+}
 
 const Button = ({
   textColor,
@@ -10,7 +21,10 @@ const Button = ({
   iconName,
   onClick,
   outline = false,
-}) => {
+  title = "ajouter au panier",
+className="",
+  children
+}: BtnType) => {
   const btnClass = useMemo(
     () =>
       outline
@@ -22,8 +36,9 @@ const Button = ({
   );
   //   const btnClass=useMemo(()=> (`btn btn-md btn${outline? "-outline" :"" }-${!textColor.length ?btnColor:textColor} ${textColor.length? ():() }  `),[size, textColor, btnColor, outline])
   return (
-    <button onClick={onClick} className={btnClass} title="ajouter au panier">
-      <Icon name={iconName} />
+    <button onClick={onClick} className={`btnClass ${className}`} title={title}>
+      {children}
+      {/* <Icon name={iconName} /> */}
     </button>
   );
 };

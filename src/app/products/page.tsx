@@ -10,13 +10,13 @@ import Icon from "@/components/UI/Icon";
 import { toLocalCurrency } from "@/utils/transform";
 
 export default function Home() {
-  const {getProduct, resetProduct, cart, order, total } = productsStore();
+  const {getProduct, reset, cart, order, total } = productsStore();
   useEffect(() => console.table(cart), [cart]);
   return getProduct !== null ? (
     <>
       <div className="card">
         <div className="btn-group">
-          <button onClick={resetProduct} className="btn btn-primary">
+          <button onClick={reset} className="btn btn-primary">
             <Icon name="list" />
           </button>
           <button onClick={order} className="btn btn-secondary">

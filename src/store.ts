@@ -1,5 +1,8 @@
 import { create } from "zustand";
-import products from "./data/products.json";
+import productsData from "@/data/products.json";
+import categories from "@/data/categories.json"
+
+const menus = productsData.filter(({category})=> category=="1")
 
 type Product = {
   id: string;
@@ -9,45 +12,52 @@ type Product = {
   image: string;
   category: string;
 };
+type Category = {id: string, name: string}
 type Store = {
   products: Product[];
+  all:Product[]
   getProduct: null | Product;
   cart: Product[];
   total: number;
-  category: string;
+  // category: string;
   filterProducts: (id: string) => void;
   categoryItems: Product[];
   select: (productId: string) => void;
-  resetProduct: () => void;
+  reset: () => void;
   addToCart: (productId: string) => void;
   order: () => void;
+  categories: Category[]; category: Category
 
 };
 
-import { MouseEventHandler } from "react";
+// import { MouseEventHandler } from "react";
 
 export const productsStore = create<Store>((set, get) => ({
-  products: products,
+  products: menus,
+  all: productsData,
   getProduct: null,
-  category: "1",
-  filterProducts: (id) => {
-    (set, get) => {
+  categories,
+  category: categories[0],
+  filterProducts: (id)=> {
+    const newCat = get().categories.find(cat=> cat.id==id)
+    console.log(newCat)
       set({
-        category: id,
-        categoryItems: get().products.filter(item => item.category === "1")
+        category: newCat,
+        products: get().all.filter(item => item.category === newCat.id)
       })
-    }
-  },
+      // console.log(get().products)
+    },
   categoryItems: [],
   select: (productId) => {
-    const newProduct = get().products.find((product) => product.id == productId);
-    console.log(newProduct);
+    const newProduct = get().all.find((product) => product.category == productId);
+    // console.log(newProduct);
+    // console.log(category)
     set({
       getProduct: newProduct,
     });
   },
-  resetProduct: () => {
-    set({ getProduct: null });
+  reset: () => {
+    set({ products: menus });
   },
   cart: [],
   addToCart: (productId) => {

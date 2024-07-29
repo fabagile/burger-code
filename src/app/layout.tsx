@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.scss"
 import "@/styles/main.scss";
 
 import Navigation from "@/components/layout/navbar/Navigation";
-import CustomHead from "@/components/layout/CustomHead";
+// import CustomHead from "@/components/layout/CustomHead";
 import Footer from "@/components/layout/Footer";
 import Icon from "@/components/UI/Icon";
 import Header from "@/components/layout/Header";
