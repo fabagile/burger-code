@@ -3,36 +3,44 @@ body {
   // background-image: url(../../public/images/Burger.jpg);
   background-size: cover;
 }
+// h1 {
+
+//   color: #ffd301;
+// }
 .site {
   font-family: "Holtwood One SC", sans-serif;
+  font-weight: 400;
 }
 
 .text-logo {
   font-family: "Holtwood One SC", sans-serif;
   color: #e7480f;
+  font-weight: 600;
   text-shadow: 2px 2px #ffd301;
   font-size: 50px;
   padding: 40px 0px;
   text-align: center;
-  .glyphicon {
-    color: #ffd301;
-    text-shadow: 0px 0px #ffd301;
-  }
+  // .glyphicon {
+  //   color: #ffd301;
+  //   text-shadow: 0px 0px #ffd301;
+  // }
 }
 
 .nav {
   margin-bottom: 40px;
-  > li > a, > li > button {
+  > li > a,
+  > li > button {
     color: #eee;
     font-size: 18px;
-    text-shadow: 2px 2px #333;
+    text-shadow: 1px 1px #333;
     &:focus,
     &:hover {
       color: #e7480f;
       background-color: #eee;
     }
   }
-  &-pills > li.active > a, &-pills > li.active > button {
+  &-pills > li.active > a,
+  &-pills > li.active > button {
     &,
     &:hover,
     &:focus {
@@ -57,6 +65,7 @@ body {
   padding: 5px 10px;
   font-size: 20px;
   border-radius: 3px;
+
   &:before {
     border: 4px solid transparent;
     border-bottom: 4px solid #4a934a;

@@ -1,9 +1,15 @@
+'use client'
+
 import React, { ReactNode } from 'react'
 import Button from '../actions/Button'
+type BtnGroupType = {children: ReactNode, btnSize?: string}
 
-const Actions = ({children}: {children: ReactNode}) => {
+
+
+const Actions = ({children, btnSize}: BtnGroupType) => {
+  // const groupClass =
   return (
-    <div className="btn-group">
+    <div className={btnSize && `btn-group-${btnSize}`}>
         {children}
         {/* <Button onClick={()=> {}} >Appuyer</Button> */}
     </div>
