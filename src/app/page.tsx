@@ -13,5 +13,5 @@ import { toLocalCurrency } from "@/utils/transform";
 export default function Home() {
   const {getProduct, resetProduct, cart, order, total } = productsStore();
   useEffect(() => console.table(cart), [cart]);
-  redirect('/products')
+  redirect('/categories/menus/')
 }

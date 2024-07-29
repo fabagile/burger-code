@@ -14,10 +14,13 @@ type Store = {
   getProduct: null | Product;
   cart: Product[];
   total: number;
+  category: string;
+  filterProducts: (id: string) => void;
+  categoryItems: Product[];
   select: (productId: string) => void;
   resetProduct: () => void;
   addToCart: (productId: string) => void;
-  order: ()=> void;
+  order: () => void;
 
 };
 
@@ -26,6 +29,16 @@ import { MouseEventHandler } from "react";
 export const productsStore = create<Store>((set, get) => ({
   products: products,
   getProduct: null,
+  category: "1",
+  filterProducts: (id) => {
+    (set, get) => {
+      set({
+        category: id,
+        categoryItems: get().products.filter(item => item.category === "1")
+      })
+    }
+  },
+  categoryItems: [],
   select: (productId) => {
     const newProduct = get().products.find((product) => product.id == productId);
     console.log(newProduct);
@@ -45,10 +58,10 @@ export const productsStore = create<Store>((set, get) => ({
     });
   },
   total: 0,
-  order: ()=> {
+  order: () => {
     set({
-        cart: [],
-        total: 0
+      cart: [],
+      total: 0
     })
   }
 }));

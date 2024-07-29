@@ -16,7 +16,7 @@ const Navigation = () => {
               key={id}
               className={id == "1" ? "active" : ""}
             >
-              <Link href={url}>{label}</Link>
+              <Link href={`/categories/${url}`}>{label}</Link>
             </li>
           ))}
 

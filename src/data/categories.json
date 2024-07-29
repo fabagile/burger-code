@@ -1,26 +1,26 @@
 [
     {
       "id": "1",
-      "name": "Menus"
+      "name": "menus"
     },
     {
       "id": "2",
-      "name": "Burgers"
+      "name": "burgers"
     },
     {
       "id": "3",
-      "name": "Snacks"
+      "name": "snacks"
     },
     {
       "id": "4",
-      "name": "Salades"
+      "name": "salades"
     },
     {
       "id": "5",
-      "name": "Boissons"
+      "name": "boissons"
     },
     {
       "id": "6",
-      "name": "Desserts"
+      "name": "desserts"
     }
   ]
