@@ -28,10 +28,10 @@ export default function RootLayout({
         {/* <meta charSet="utf-8" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        {/* <script
+        <script
           src="https://kit.fontawesome.com/a54ea23ea6.js"
           crossOrigin="anonymous"
-        ></script> */}
+        ></script>
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"

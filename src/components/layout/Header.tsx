@@ -2,11 +2,12 @@ import React from "react";
 import Icon from "../UI/Icon";
 
 const Header = () => {
+  const Logo = ()=><i className="fa-solid fa-utensils"></i>
   return (
     <h1 className="text-logo">
-      <Icon name="cutlery" />
-      <span className="px-3">Burger Code</span>
-      <Icon name="cutlery" />
+      <Logo  />
+      <span className="px-4">Burger Code</span>
+      <Logo />
     </h1>
   );
 };
