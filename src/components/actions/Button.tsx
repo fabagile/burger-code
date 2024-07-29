@@ -36,7 +36,7 @@ className="",
   );
   //   const btnClass=useMemo(()=> (`btn btn-md btn${outline? "-outline" :"" }-${!textColor.length ?btnColor:textColor} ${textColor.length? ():() }  `),[size, textColor, btnColor, outline])
   return (
-    <button onClick={onClick} className={`btnClass ${className}`} title={title}>
+    <button type="button" onClick={onClick} className={`${btnClass} ${className}`} title={title}>
       {children}
       {/* <Icon name={iconName} /> */}
     </button>

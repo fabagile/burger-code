@@ -1,5 +1,5 @@
 body {
-  // background: url(../../public/images/bg.png);
+  background: url(../../public/images/bg.png);
   // background-image: url(../../public/images/Burger.jpg);
   background-size: cover;
 }
@@ -22,7 +22,7 @@ body {
 
 .nav {
   margin-bottom: 40px;
-  > li > a {
+  > li > a, > li > button {
     color: #eee;
     font-size: 18px;
     text-shadow: 2px 2px #333;
@@ -32,11 +32,12 @@ body {
       background-color: #eee;
     }
   }
-  &-pills > li.active > a {
+  &-pills > li.active > a, &-pills > li.active > button {
     &,
     &:hover,
     &:focus {
       background: #e7480f;
+      color: #eee;
     }
   }
 }

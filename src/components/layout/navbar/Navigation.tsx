@@ -9,35 +9,34 @@ import Actions from "../Actions";
 import Icon from "@/components/UI/Icon";
 
 const Navigation = () => {
-  // useEffect(()=> category?console.log(category.name), [])
-  // const active = useMemo(()=> links.filter(link=> link.id==""))
   const { products, filterProducts, categories, category } = productsStore();
-  console.log(category);
+  useEffect(() => console.table(products), [products]);
+  // const active = useMemo(()=> links.filter(link=> link.id==""))
+  // console.log(category);
 
   return (
     <>
-    
-      <nav className="" >
-        
-          <ul className="nav nav-pills">
-            {categories.map(({ id, name }) => (
-              <li
-                role="presentation"
-                key={id}
-                className={id == category.id ? "nav-item active" : "nav-item"}
+      <nav className="navbar">
+        <ul className="nav nav-pills ">
+          {categories.map(({ id, name }) => (
+            <li
+              role="presentation"
+              key={id}
+              className={`${id == category.id ? "active" : ""}`}
+              // onClick={() => filterProducts(id)}
+            >
+              <Button
+                onClick={() => filterProducts(id)}
+                btnColor={"transparent"}
+                title={name}
               >
-                <Button
-                  onClick={() => filterProducts(id)}
-                  btnColor={id == "1" ? "primary" : "secondary"}
-                  title={name}
-                >
-                  {name}
-                </Button>
-                {/* <Link onClick={()=> filterProducts(id)} href={`/products`}>{name}</Link> */}
-              </li>
-            ))}
+                {name}
+              </Button>
+              {/* <Link onClick={()=> filterProducts(id)} href={`/products`}>{name}</Link> */}
+            </li>
+          ))}
 
-            {/* $db = Database::connect();
+          {/* $db = Database::connect();
                 $statement = $db->query('SELECT * FROM categories');
                 $categories = $statement->fetchAll();
                 foreach ($categories as $category) 
@@ -49,8 +48,8 @@ const Navigation = () => {
                 }
 
                 echo    ' */}
-          </ul>
-          {/* <div className="bg-light">
+        </ul>
+        {/* <div className="bg-light">
             <Actions>
               <Button btnColor="primary">
                 <Icon name="plus" />
@@ -65,7 +64,6 @@ const Navigation = () => {
               </Button>
             </Actions>
           </div> */}
-        
       </nav>
     </>
   );
