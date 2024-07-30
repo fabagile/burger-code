@@ -44,13 +44,13 @@ export default function RootLayout({
           type="text/css"
         />
       </head>
-      <body>
-        <div className="container site">
+      <body>{children}
+        {/* <div className="container site">
           <Header />
           <Navigation />
           <div>{children}</div>
         </div>
-        {/* <Footer /> */}
+        <Footer /> */}
       </body>
     </html>
   );

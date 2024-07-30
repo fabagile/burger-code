@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo } from "react";
+import { useRouter } from "next/navigation";
 
 import { links } from "./links";
 import Button from "@/components/actions/Button";
@@ -13,6 +14,9 @@ const Navigation = () => {
   useEffect(() => console.table(products), [products]);
   // const active = useMemo(()=> links.filter(link=> link.id==""))
   // console.log(category);
+  const router = useRouter()
+  useEffect(()=> console.log(window.history),[])
+  
 
   return (
     <nav className="container-fluid mb-4">

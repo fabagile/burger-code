@@ -19,7 +19,7 @@ const Dish = ({ id, name, description, price, image }) => {
     }))
   );
   return (
-    <div className="col-sm-6 col-md-4">
+    <div className="col-sm-6 col-md-4 col-lg-3">
       <Link href={`/products/${id}`}>
         <div className="thumbnail" onClick={() => select(id)}>
           <img src={`/images/${image}`} alt={`${name}`} />

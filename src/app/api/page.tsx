@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import data from "./data.json"
+import data from "@/data/products.json";
 
 const ApiPage = () => {
-  return (
-    <div>
-      {JSON.stringify(data,null, 2 )}
-    </div>
-  )
-}
+  return <code>{JSON.stringify(data, null, 2)}</code>;
+};
 
-export default ApiPage
+export default ApiPage;

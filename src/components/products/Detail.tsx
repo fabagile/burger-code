@@ -22,26 +22,17 @@ const Detail = ({ id, name, description, price, image }) => {
   return (
     <div className="card">
       <div className="row">
-        <div className="col-sm-12 col-md-5">
-          <div className="thumbnail">
-            <img src={`/images/${image}`} alt={`${name}`} />
-            <div className="price">{toLocalCurrency(parseFloat(price))}</div>
-          </div>
-        </div>
-        <div className="col-sm-12 col-md-7">
+      <div className="col-md-6">
           <div className="caption">
             <div className="d-flex justify-content-between mb-3">
               <h4>{name}</h4>
-              {/* <div className="float-right"></div> */}
-            </div>
-            <p>{description}</p>
             <div className="my-3 float-end">
-              <Actions>
-                <Button btnColor="warning">
+              <Actions btnSize="sm">
+                <Button size="sm" btnColor="warning">
                   <Icon name="cart-plus" />
                 </Button>
                 <Link href="/" onClick={() => addToCart(id)}>
-                  <Button btnColor="info">
+                  <Button size="sm" btnColor="info">
                     <Icon name="arrow-left" />
                   </Button>
                 </Link>
@@ -51,8 +42,18 @@ const Detail = ({ id, name, description, price, image }) => {
                 <span className="ps-3">Retour à l'accueil</span>
               </a> */}
             </div>
+              {/* <div className="float-right"></div> */}
+            </div>
+            <p>{description}</p>
           </div>
         </div>
+        <div className="col-md-6">
+          <div className="thumbnail">
+            <img src={`/images/${image}`} alt={`${name}`} />
+            <div className="price">{toLocalCurrency(parseFloat(price))}</div>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

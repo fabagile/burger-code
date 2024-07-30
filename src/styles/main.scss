@@ -8,15 +8,20 @@ body {
 //   color: #ffd301;
 // }
 .site {
-  font-family: "Holtwood One SC", sans-serif;
+  // font-family: "Holtwood One SC", sans-serif;
   font-weight: 400;
+}
+code {
+  font-family: monospace;
 }
 
 .text-logo {
-  font-family: "Holtwood One SC", sans-serif;
-  color: #e7480f;
+  // font-family: "Holtwood One SC", sans-serif;
+  cursor: pointer;
+  // cursor: hand;
+  color: #ffd301;
   font-weight: 600;
-  text-shadow: 2px 2px #ffd301;
+  text-shadow: 2px 2px 1px #e7480f;
   font-size: 50px;
   padding: 40px 0px;
   text-align: center;
