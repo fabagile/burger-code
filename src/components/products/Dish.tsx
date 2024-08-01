@@ -29,14 +29,14 @@ const Dish = ({ id, name, description, price, image }) => {
             <div className="d-flex justify-content-between">
               <h4>{name}</h4>
               <div className="float-end">
-                <Actions btnSize="sm">
+                <Actions >
                   <ShowProduct id={id} />
                   {/* <Button size="sm" outline btnColor="link">
                     <Link href={`/products/${id}`}>
                       <Icon name="eye" />
                     </Link>
                   </Button> */}
-                  <AddToCart size="sm" id={id} />
+                  <AddToCart id={id} />
                 </Actions>
               </div>
             </div>

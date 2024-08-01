@@ -7,7 +7,7 @@
 body {
   background: url(../../public/images/bg.png);
   background-size: cover;
-  font-family:'Comfortaa' !important;
+  font-family:var(--primary-font) !important;
 }
 .site {
   font-weight: 400;
@@ -15,8 +15,13 @@ body {
 code {
   font-family: monospace;
 }
+
+:root {
+  --primary-font: 'Source Code Pro';
+  --secondary-font: "Syne"
+}
 .text-logo {
-  font-family: 'Paytone One' !important;
+  font-family: var(--secondary-font) !important;
   cursor: pointer;
   color: #ffd301;
   font-weight: 600;

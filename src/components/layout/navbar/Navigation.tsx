@@ -38,7 +38,7 @@ const Navigation = () => {
           ))}
         </ul>
 
-        <Actions>
+        <Actions btnSize='lg'>
           <BackHome />
           <ShowCart />
         </Actions>

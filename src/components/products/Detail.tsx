@@ -27,7 +27,7 @@ const Detail = ({ id, name, description, price, image }) => {
               <h4>{name}</h4>
               <div className="my-3 float-end">
                 <Actions >
-                  <AddToCart id={id} size="sm" />
+                  <AddToCart id={id} />
                   <Button size="sm" btnColor="info">
                     <Icon name="arrow-left" />
                   </Button>
