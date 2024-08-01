@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.scss"
+import "bootstrap-icons/font/bootstrap-icons.scss";
 import "@/styles/main.css";
 
 import Navigation from "@/components/layout/navbar/Navigation";
@@ -14,7 +14,7 @@ import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   title: "Burger Code",
-  description: "Commandez vos burgers préférés"
+  description: "Commandez vos burgers préférés",
 };
 
 export default function RootLayout({
@@ -37,14 +37,13 @@ export default function RootLayout({
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-        <link
-          href="http://fonts.googleapis.com/css?family=Holtwood+One+SC"
-          rel="stylesheet"
-          type="text/css"
-        />
+        {/* fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com"  />
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Syne:wght@400..800&display=swap" rel="stylesheet"/>
       </head>
-      <body>{children}
+      <body>
+        {children}
         {/* <div className="container site">
           <Header />
           <Navigation />

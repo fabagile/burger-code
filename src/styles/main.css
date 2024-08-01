@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Syne:wght@400..800&display=swap'); */
+
 body {
   background: url(../../public/images/bg.png);
   background-size: cover;
+  font-family:'Comfortaa' !important;
 }
 .site {
   font-weight: 400;
@@ -13,6 +16,7 @@ code {
   font-family: monospace;
 }
 .text-logo {
+  font-family: 'Paytone One' !important;
   cursor: pointer;
   color: #ffd301;
   font-weight: 600;
