@@ -5,8 +5,10 @@ import { productsStore } from "@/store";
 import { useShallow } from "zustand/react/shallow";
 import { converToLocalCurrency } from "@/utils/transform";
 import Icon from "../UI/Icon";
-import Actions from "../layout/Actions";
-import Button from "../actions/Button";
+import Actions from "../actions/_Actions";
+import Button from "../actions/_Button";
+import AddToCart from "../actions/AddToCart";
+import ShowProduct from "../actions/ShowProduct";
 // import AddToCart from "../actions/AddToCart";
 
 const Dish = ({ id, name, description, price, image }) => {
@@ -19,7 +21,7 @@ const Dish = ({ id, name, description, price, image }) => {
   );
   return (
     <div className="col-sm-6 col-md-4 col-lg-3">
-      <Link href={`/products/${id}`}>
+      {/* <Link href={`/products/${id}`}> */}
         <div className="thumbnail" onClick={() => select(id)}>
           <img src={`/images/${image}`} alt={`${name}`} />
           <div className="price">{converToLocalCurrency(price)}</div>
@@ -28,27 +30,20 @@ const Dish = ({ id, name, description, price, image }) => {
               <h4>{name}</h4>
               <div className="float-end">
                 <Actions btnSize="sm">
-                  <Button size="sm" outline btnColor="link">
+                  <ShowProduct id={id} />
+                  {/* <Button size="sm" outline btnColor="link">
                     <Link href={`/products/${id}`}>
                       <Icon name="eye" />
                     </Link>
-                  </Button>
-                  <Button
-                    size="sm"
-                    onClick={() => addToCart(id)}
-                    btnColor="warning"
-                  >
-                    <Icon name="cart-plus" />
-                  </Button>
-                  {/* <AddToCart  /> */}
-                  {/* <span className="ps-3">Voir le détail</span> */}
+                  </Button> */}
+                  <AddToCart size="sm" id={id} />
                 </Actions>
               </div>
             </div>
             <p>{description}</p>
           </div>
         </div>
-      </Link>
+      
     </div>
   );
 };

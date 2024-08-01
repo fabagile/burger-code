@@ -1,17 +1,18 @@
-'use client'
+"use client";
 
 import { useRouter } from "next/navigation";
 import React from "react";
-// import Icon from "../UI/Icon";
+import { CiForkAndKnife } from "react-icons/ci";
 
 const Header = () => {
-  const Logo = ()=><i className="fa-solid fa-utensils"></i>
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <h1 onClick={()=>router.push('/products')} className="text-logo">
-      <Logo  />
-      <span className="px-4">Burger Code</span>
-      <Logo />
+    <h1 onClick={() => router.push("/products")} className="text-logo">
+      <div className="d-flex justify-content-center gap-3">
+        <CiForkAndKnife />
+        <span>Burger Code</span>
+        <CiForkAndKnife />
+      </div>
     </h1>
   );
 };

@@ -1,16 +1,26 @@
-import React from "react";
-import Icon from "../UI/Icon";
+"use client";
 
-const AddToCart = ({ action }) => {
+import React from "react";
+
+import { FaArrowLeft, FaHouse, } from "react-icons/fa6";
+
+import Button from "./_Button";
+import { useRouter } from "next/navigation";
+
+const BackHome = () => {
+  const router = useRouter();
   return (
-    <button
-      onClick={action}
-      className="btn btn-sm btn-outline-dark bg-info float-end"
+    <Button
+      onClick={() => router.push("/products")}
+      size="lg"
+      btnColor="info"
       title="Retour à l'accueil"
     >
-      <Icon name="close" />
-    </button>
+      <FaHouse />
+      {/* <FaArrowLeft /> */}
+      
+    </Button>
   );
 };
 
-export default AddToCart;
+export default BackHome;
