@@ -1,9 +1,13 @@
+'use client'
+
 import React from "react";
 
 import data from "@/data/products.json";
+import { redirect } from "next/navigation";
 
 const ApiPage = () => {
-  return <code>{JSON.stringify(data, null, 2)}</code>;
+  redirect('/api/all')
+  // return <code>{JSON.stringify(data, null, 2)}</code>;
 };
 
 export default ApiPage;

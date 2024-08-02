@@ -1,3 +1,4 @@
+import BackToAdminPage from "@/components/actions/BackToAdminPage";
 import React from "react";
 
 const Insert = () => {
@@ -79,9 +80,7 @@ const Insert = () => {
           <button type="submit" className="btn btn-success">
             <span className="glyphicon glyphicon-pencil"></span> Ajouter
           </button>
-          <a className="btn btn-primary" href="index.php">
-            <span className="glyphicon glyphicon-arrow-left"></span> Retour
-          </a>
+          <BackToAdminPage/>
         </div>
       </form>
     </div>

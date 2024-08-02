@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+:root {
+  --primary-font: 'Source Code Pro';
+  --secondary-font: "Syne"
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Syne:wght@400..800&display=swap'); */
 
 body {
@@ -14,11 +21,6 @@ body {
 }
 code {
   font-family: monospace;
-}
-
-:root {
-  --primary-font: 'Source Code Pro';
-  --secondary-font: "Syne"
 }
 .text-logo {
   font-family: var(--secondary-font) !important;
