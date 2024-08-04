@@ -17,8 +17,8 @@ export default function List() {
   const currentList = useMemo(() => products, [products]);
   return (
     <div className="row">
-      {currentList.map((i) => (
-        <Dish key={i.id} {...i} />
+      {currentList.map((item, index) => (
+        <Dish key={index} index={index} {...item} />
       ))}
     </div>
   );

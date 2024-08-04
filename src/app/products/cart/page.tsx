@@ -14,9 +14,10 @@ const Cart = () => {
 cart.map(item=> <li key={item.id}>{item.name} {converToLocalCurrency(item.price)}</li>)
   }</ul>
   <BackHome />
-    <code>
+    {/* <code>
+
         {JSON.stringify(cart)}
-    </code>
+    </code> */}
   </div>
   )
 }

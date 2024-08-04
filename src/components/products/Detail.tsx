@@ -8,6 +8,8 @@ import Icon from "../UI/Icon";
 import Actions from "../actions/_Actions";
 import Button from "../actions/_Button";
 import AddToCart from "../actions/AddToCart";
+import GoTo from "../actions/_GoTo";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const Detail = ({ id, name, description, price, image }) => {
   // const { select, getProduct, addToCart } = productsStore(
@@ -28,9 +30,9 @@ const Detail = ({ id, name, description, price, image }) => {
               <div className="my-3 float-end">
                 <Actions >
                   <AddToCart id={id} />
-                  <Button size="sm" btnColor="info">
-                    <Icon name="arrow-left" />
-                  </Button>
+                  <GoTo url="/products" color="info" title="retour à l'accueil">
+                    <FaArrowLeft />
+                  </GoTo>
                 </Actions>
               </div>
             </div>
