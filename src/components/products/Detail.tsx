@@ -1,24 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-// import React from "react";
-import { useShallow } from "zustand/react/shallow";
-import { productsStore } from "@/store";
+
 import { converToLocalCurrency } from "@/utils/transform";
-import Icon from "../UI/Icon";
 import Actions from "../actions/_Actions";
-import Button from "../actions/_Button";
 import AddToCart from "../actions/AddToCart";
 import GoTo from "../actions/_GoTo";
 import { FaArrowLeft } from "react-icons/fa6";
 
 const Detail = ({ id, name, description, price, image }) => {
-  // const { select, getProduct, addToCart } = productsStore(
-  //   useShallow((s) => ({
-  //     select: s.select,
-  //     getProduct: s.getProduct,
-  //     addToCart: s.addToCart,
-  //   }))
-  // );
 
   return (
     <div className="card">

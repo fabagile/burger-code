@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 
 import { productsStore } from "@/store";
 import Dish from "./Dish";
 import { useShallow } from "zustand/react/shallow";
-// import Card from "../UI/Card";
+
 
 export default function List() {
   const { products } = productsStore(
