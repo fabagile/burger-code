@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 
-import List from "@/components/produits/List";
+
 import { productsStore, newCategories } from "@/store";
+import List from "@/components/products/List";
 
 // import Detail from "@/components/produits/Detail";
 // import Icon from "@/components/UI/Icon";

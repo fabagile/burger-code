@@ -1,6 +1,6 @@
 'use client'
 
-import Detail from "@/components/produits/Detail";
+import Detail from "@/components/products/Detail";
 import { productsStore } from "@/store";
 import { useRouter } from "next/router";
 

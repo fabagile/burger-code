@@ -20,7 +20,7 @@ const All = () => {
           <GoTo url="/api/insert" color="success" title="ajouter un produit">
             <FaPlus />
           </GoTo>
-          <GoTo url="/products" color="info" title="retour à l'accueil">
+          <GoTo url="/produits" color="info" title="retour à l'accueil">
             <FaHouse />
           </GoTo>
           {/* <BackHome /> */}

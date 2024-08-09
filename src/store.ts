@@ -5,7 +5,7 @@ import newProducts from "@/data/newProducts.json"
 
 const menus = productsData.filter(({category})=> category=="1")
 
-export const newCategories = newProducts.reduce((names, p)=> (!names.includes(p.category)?names.concat(p.category):names), [])
+export const newCategories = newProducts.reduce((names, p)=> (!names.includes(p.category)?(names.concat(p.category)):(names)), [])
 
 type Product = {
   id: string;
