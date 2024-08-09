@@ -7,7 +7,7 @@ import { CiForkAndKnife } from "react-icons/ci";
 const Header = () => {
   const router = useRouter();
   return (
-    <h1 onClick={() => router.push("/products")} className="text-logo">
+    <h1 onClick={() => router.push("/produits")} className="text-logo">
       <div className="d-flex justify-content-center gap-3">
         <CiForkAndKnife />
         <span>Burger Code</span>

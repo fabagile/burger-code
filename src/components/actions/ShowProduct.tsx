@@ -6,7 +6,7 @@ import { FaEye } from 'react-icons/fa6'
 const ShowProduct = ({ id }) => {
   const router = useRouter()
   return (
-    <Button title="Voir le produit" onClick={() => router.push(`/products/${id}`)} >
+    <Button title="Voir le produit" onClick={() => router.push(`/produits/${id}`)} >
       <FaEye />
     </Button>
   )

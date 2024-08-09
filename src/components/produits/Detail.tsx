@@ -4,8 +4,9 @@ import Actions from "../actions/_Actions";
 import AddToCart from "../actions/AddToCart";
 import GoTo from "../actions/_GoTo";
 import { FaArrowLeft } from "react-icons/fa6";
+import Thumbnail from "./Thumbnail";
 
-const Detail = ({ id, name, description, price, image }) => {
+const Detail = ({ item }) => {
 
   return (
     <div className="card">
@@ -13,25 +14,22 @@ const Detail = ({ id, name, description, price, image }) => {
         <div className="col-md-6">
           <div className="caption">
             <div className="d-flex justify-content-between mb-3">
-              <h4>{name}</h4>
+              <h4>{item.name}</h4>
               <div className="my-3 float-end">
                 <Actions >
-                  <AddToCart id={id} />
-                  <GoTo url="/products" color="info" title="retour à l'accueil">
+                  <AddToCart id={item.id} />
+                  <GoTo url="/produits" color="info" title="retour à l'accueil">
                     <FaArrowLeft />
                   </GoTo>
                 </Actions>
               </div>
             </div>
-            <p>{description}</p>
+            <p>{item.description}</p>
           </div>
         </div>
         <div className="col-md-6">
           <div className="thumbnail">
-            <img src={`/images/${image}`} alt={`${name}`} />
-            <div className="price">
-              {converToLocalCurrency(parseFloat(price))}
-            </div>
+            <Thumbnail {...item} />
           </div>
         </div>
       </div>

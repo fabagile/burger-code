@@ -1,6 +1,6 @@
 'use client'
 
-import Detail from "@/components/products/Detail";
+import Detail from "@/components/produits/Detail";
 import { productsStore } from "@/store";
 import { useRouter } from "next/router";
 
@@ -17,7 +17,7 @@ const ProductPage = ({params}) => {
     // const id = useMemo(()=> router.query.id, [router.query.id])
     
   return (
-    <Detail {...item} />
+    <Detail item={item} />
   )
 }
 

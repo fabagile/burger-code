@@ -12,9 +12,9 @@ import ShowCart from "@/components/actions/ShowCart";
 const Navigation = () => {
   const { products, filterProducts, categories, category, cart } =
     productsStore();
-  useEffect(() => console.table(products), [products]);
+  // useEffect(() => console.table(products), [products]);
   const router = useRouter();
-  useEffect(() => console.log(window.history), []);
+  // useEffect(() => console.log(window.history), []);
 
   return (
     <nav className="container-fluid mb-4">
@@ -28,6 +28,7 @@ const Navigation = () => {
               className={`${id == category.id ? "active" : ""}`}
             >
               <Button
+                url={`/produits/categories/${category.id}`}
                 onClick={() => filterProducts(id)}
                 btnColor={"transparent"}
                 title={name}

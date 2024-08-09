@@ -6,8 +6,9 @@ import { converToLocalCurrency } from "@/utils/transform";
 import Actions from "../actions/_Actions";
 import AddToCart from "../actions/AddToCart";
 import ShowProduct from "../actions/ShowProduct";
+import Thumbnail from "./Thumbnail";
 
-const Dish = ({ name, description, price, image, index }) => {
+const Dish = ({ item, index }) => {
   const { select, } = productsStore(
     useShallow((s) => ({
       select: s.select,
@@ -16,13 +17,14 @@ const Dish = ({ name, description, price, image, index }) => {
     }))
   );
   return (
-    <div className="col-sm-6 col-md-4 col-lg-3">
+    <div className="col-sm-6 col-md-4 col-xl-3">
       <div className="thumbnail" onClick={() => select(index)}>
-        <img src={`/images/${image}`} alt={`${name}`} />
-        <div className="price">{converToLocalCurrency(price)}</div>
+        <Thumbnail {...item} />
+        {/* <img src={`/images/${image}`} alt={`${name}`} />
+        <div className="price">{converToLocalCurrency(price)}</div> */}
         <div className="caption">
           <div className="d-flex justify-content-between">
-            <h4>{name}</h4>
+            <h4>{item.name}</h4>
             <div className="float-end">
               <Actions >
                 <ShowProduct id={index} />
@@ -30,7 +32,7 @@ const Dish = ({ name, description, price, image, index }) => {
               </Actions>
             </div>
           </div>
-          <p>{description}</p>
+          <p>{item.description}</p>
         </div>
       </div>
 

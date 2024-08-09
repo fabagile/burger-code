@@ -13,9 +13,9 @@ const ShowCart = () => {
     <Button
       btnColor="info"
       size="lg"
-      onClick={() => router.push("/products/cart")}
+      onClick={() => router.push("/produits/cart")}
       title="voir le panier"
-      className="position-relative"
+      // className="position-relative"
     >
       <FaCartShopping />
       <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info text-light">

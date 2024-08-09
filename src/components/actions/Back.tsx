@@ -11,7 +11,7 @@ const BackHome = () => {
   const router = useRouter();
   return (
     <Button
-      onClick={() => router.push("/products")}
+      onClick={() => router.push("/produits")}
       size="lg"
       btnColor="info"
       title="Retour à l'accueil"
