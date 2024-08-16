@@ -17,14 +17,14 @@ const Dish = ({ item, index }) => {
     }))
   );
   return (
-    <div className="col-sm-6 col-md-4 col-xl-3">
-      <div className="thumbnail" onClick={() => select(index)}>
+    <div className="flex flex-col gap-1">
+      <div className="bg-white p-1 rounded thumbnail" onClick={() => select(index)}>
         <Thumbnail {...item} />
         {/* <img src={`/images/${image}`} alt={`${name}`} />
         <div className="price">{converToLocalCurrency(price)}</div> */}
-        <div className="caption">
+        <div className="caption mt-2 py-1">
           <div className="d-flex justify-content-between">
-            <h4>{item.name}</h4>
+            <h4 className="font-semibold text-2xl">{item.name}</h4>
             <div className="float-end">
               <Actions >
                 <ShowProduct id={index} />

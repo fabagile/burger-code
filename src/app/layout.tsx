@@ -25,18 +25,15 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        {/* <meta charSet="utf-8" /> */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        {/* <script
-          src="https://kit.fontawesome.com/a54ea23ea6.js"
-          crossOrigin="anonymous"
-        ></script> */}
+        
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        {/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> */}
         {/* fonts */}
         {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com"  />

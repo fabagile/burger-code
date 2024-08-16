@@ -18,7 +18,7 @@ export default function List() {
   // console.log(category)
   const currentList = useMemo(() => products, [products]);
   return (
-    <div id={category.name} className="row">
+    <div id={category.name} className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {currentList.map((item, index) => (
         <Dish key={index} index={index} item={item} />
       ))}

@@ -14,7 +14,7 @@ const Detail = ({ item }) => {
         <div className="col-md-6">
           <div className="caption">
             <div className="d-flex justify-content-between mb-3">
-              <h4>{item.name}</h4>
+              <h4 className="font-semibold text-2xl" >{item.name}</h4>
               <div className="my-3 float-end">
                 <Actions >
                   <AddToCart id={item.id} />
